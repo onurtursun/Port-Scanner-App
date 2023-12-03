@@ -57,7 +57,7 @@ class MyMainWindow(QMainWindow):
                 return
 
             for i in range(range_in, range_out + 1):
-                ip = f"172.16.2.{i}"
+                ip = f"*.*.*.{i}"
                 for port in range(start_port, end_port + 1):
                     try:
                         sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
